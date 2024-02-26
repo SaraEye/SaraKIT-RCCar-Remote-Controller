@@ -1,0 +1,80 @@
+object FMobileDecoder: TFMobileDecoder
+  Left = 0
+  Top = 0
+  Caption = 'Decoder'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 460
+  DesignerDeviceName = 'iPhone'
+  DesignerOrientation = 0
+  object Layout1: TLayout
+    Align = alClient
+    Height = 257.000000000000000000
+    Padding.Bottom = 5.000000000000000000
+    Width = 320.000000000000000000
+    object Rectangle1: TRectangle
+      Align = alClient
+      Fill.Color = xFF505050
+      Height = 252.000000000000000000
+      Width = 320.000000000000000000
+      object Image1: TImage
+        Align = alClient
+        Height = 252.000000000000000000
+        Padding.Bottom = 10.000000000000000000
+        Width = 320.000000000000000000
+      end
+    end
+  end
+  object FlowLayout1: TFlowLayout
+    Align = alBottom
+    Height = 47.000000000000000000
+    Padding.Top = 10.000000000000000000
+    Position.Y = 257.000000000000000000
+    Width = 320.000000000000000000
+    Justify = fjCenter
+    JustifyLastLine = fjCenter
+    FlowDirection = fdLeftToRight
+    HorizontalGap = 5.000000000000000000
+    object BConnect: TButton
+      Align = alCenter
+      Height = 44.000000000000000000
+      TabOrder = 0
+      Text = 'Connect'
+      Trimming = ttCharacter
+      Width = 122.000000000000000000
+      OnClick = BConnectClick
+    end
+    object BDisconnect: TButton
+      Height = 44.000000000000000000
+      Position.X = 163.500000000000000000
+      TabOrder = 1
+      Text = 'Disconnect'
+      Trimming = ttCharacter
+      Width = 120.000000000000000000
+      OnClick = BDisconnectClick
+    end
+  end
+  object Layout2: TLayout
+    Align = alBottom
+    Height = 156.000000000000000000
+    Position.Y = 304.000000000000000000
+    Width = 320.000000000000000000
+    object Memo1: TMemo
+      Align = alClient
+      Height = 146.000000000000000000
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      TabOrder = 0
+      Width = 310.000000000000000000
+    end
+  end
+end
