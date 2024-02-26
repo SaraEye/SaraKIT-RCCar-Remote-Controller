@@ -129,7 +129,7 @@ int main(int argc, char** argv){
 For your convenience, here are the links to the installation files:
 
 - Android: [Download Link](https://sarakit.saraai.com/download/SaraKITRemoteController.apk)
-- Windows executable: [Download Link]([link](https://sarakit.saraai.com/download/SaraKITRemoteController.exe))
+- Windows executable: [Download Link](https://sarakit.saraai.com/download/SaraKITRemoteController.exe)
 
 ## Contribution and Customization
 
